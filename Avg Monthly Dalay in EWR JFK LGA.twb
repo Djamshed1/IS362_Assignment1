@@ -1,0 +1,631 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0728.2252                               -->
+<workbook original-version='10.3' source-build='10.3.2 (10300.17.0728.2252)' source-platform='win' version='10.3' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='AvgMonthlyDalayinEWRJFKLGA' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='AvgDelay' inline='true' name='federated.184qtc903o8rhg11tv92d0crwte5' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='AvgDelay' name='textscan.0i7m2go0fgg9t915tf2951co4erc'>
+            <connection class='textscan' directory='C:/Users/James/Desktop/Everything for school/IP...............IS 362 Data Acquisition Management/Week 1' filename='AvgDelay.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0i7m2go0fgg9t915tf2951co4erc' name='AvgDelay.csv' table='[AvgDelay#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='year' ordinal='0' />
+            <column datatype='string' name='carrier' ordinal='1' />
+            <column datatype='string' name='origin' ordinal='2' />
+            <column datatype='integer' name='month' ordinal='3' />
+            <column datatype='real' name='avg_delay' ordinal='4' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[AvgDelay.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>carrier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[carrier]</local-name>
+            <parent-name>[AvgDelay.csv]</parent-name>
+            <remote-alias>carrier</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>origin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[origin]</local-name>
+            <parent-name>[AvgDelay.csv]</parent-name>
+            <remote-alias>origin</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[AvgDelay.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_delay</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_delay]</local-name>
+            <parent-name>[AvgDelay.csv]</parent-name>
+            <remote-alias>avg_delay</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AvgDelay.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Avg Delay' datatype='real' name='[avg_delay]' role='measure' type='quantitative' />
+      <column caption='Carrier' datatype='string' name='[carrier]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Origin' datatype='string' name='[origin]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <column-instance column='[carrier]' derivation='None' name='[none:carrier:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='C:/Users/James/Desktop/Everything for school/IP...............IS 362 Data Acquisition Management/Week 1/Avg Monthly Dalay in EWR JFK LGA.tde' schema='Extract' tablename='Extract' update-time='08/30/2017 01:50:45 AM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='36' timestamp-start='2017-08-30 01:50:45.846' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>36.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.0</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>36.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_delay</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_delay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_delay</remote-alias>
+              <ordinal>1</ordinal>
+              <family>AvgDelay.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>1418.5205999999994</statistic>
+                <statistic aggregation='Avg' datatype='real'>39.403349999999982</statistic>
+                <statistic aggregation='Min' datatype='real'>21.8523</statistic>
+                <statistic aggregation='Max' datatype='real'>70.914699999999996</statistic>
+                <statistic aggregation='Stdev' datatype='real'>11.193570915676837</statistic>
+                <statistic aggregation='StdevP' datatype='real'>11.037009765821265</statistic>
+                <statistic aggregation='Var' datatype='real'>125.29602984428638</statistic>
+                <statistic aggregation='VarP' datatype='real'>121.81558457083399</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>60279.824728559979</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>carrier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[carrier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>carrier</remote-alias>
+              <ordinal>2</ordinal>
+              <family>AvgDelay.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;DL&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;DL&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='Median' datatype='string'>&quot;DL&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>3</ordinal>
+              <family>AvgDelay.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>234.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>6.5</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>12</statistic>
+                <statistic aggregation='Stdev' datatype='real'>3.5010202594590707</statistic>
+                <statistic aggregation='StdevP' datatype='real'>3.4520525295346629</statistic>
+                <statistic aggregation='Var' datatype='real'>12.257142857142858</statistic>
+                <statistic aggregation='VarP' datatype='real'>11.916666666666666</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>1950.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>origin</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[origin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>origin</remote-alias>
+              <ordinal>4</ordinal>
+              <family>AvgDelay.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;EWR&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;LGA&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='Median' datatype='string'>&quot;JFK&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>year</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>year</remote-alias>
+              <ordinal>5</ordinal>
+              <family>AvgDelay.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>72468.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>2013.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>2013</statistic>
+                <statistic aggregation='Max' datatype='integer'>2013</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.0</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='Median' datatype='integer'>2013</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>145878084.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+        <filter class='quantitative' column='[avg_delay]' included-values='in-range-or-null'>
+          <min>21.8523</min>
+          <max>70.914699999999996</max>
+        </filter>
+        <filter class='categorical' column='[carrier]'>
+          <groupfilter function='member' level='[carrier]' member='&quot;DL&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        </filter>
+        <filter class='quantitative' column='[month]' included-values='in-range-or-null'>
+          <min>1</min>
+          <max>12</max>
+        </filter>
+        <filter class='categorical' column='[origin]'>
+          <groupfilter from='&quot;EWR&quot;' function='range' level='[origin]' to='&quot;LGA&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        </filter>
+        <filter class='quantitative' column='[year]' included-values='in-range-or-null'>
+          <min>2013</min>
+          <max>2013</max>
+        </filter>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.544513' measure-ordering='alphabetic' measure-percentage='0.455487' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:carrier:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;DL&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AvgDelay' name='federated.184qtc903o8rhg11tv92d0crwte5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.184qtc903o8rhg11tv92d0crwte5'>
+            <column caption='Avg Delay' datatype='real' name='[avg_delay]' role='measure' type='quantitative' />
+            <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+            <column-instance column='[month]' derivation='None' name='[none:month:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[origin]' derivation='None' name='[none:origin:nk]' pivot='key' type='nominal' />
+            <column caption='Origin' datatype='string' name='[origin]' role='dimension' type='nominal' />
+            <column-instance column='[avg_delay]' derivation='Sum' name='[sum:avg_delay:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.184qtc903o8rhg11tv92d0crwte5].[none:month:qk]' included-values='in-range-or-null'>
+            <min>1</min>
+            <max>12</max>
+          </filter>
+          <filter class='categorical' column='[federated.184qtc903o8rhg11tv92d0crwte5].[none:origin:nk]'>
+            <groupfilter function='level-members' level='[none:origin:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.184qtc903o8rhg11tv92d0crwte5].[sum:avg_delay:qk]' included-values='in-range-or-null'>
+            <min>21.8523</min>
+            <max>70.914699999999996</max>
+          </filter>
+          <slices>
+            <column>[federated.184qtc903o8rhg11tv92d0crwte5].[none:month:qk]</column>
+            <column>[federated.184qtc903o8rhg11tv92d0crwte5].[sum:avg_delay:qk]</column>
+            <column>[federated.184qtc903o8rhg11tv92d0crwte5].[none:origin:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.184qtc903o8rhg11tv92d0crwte5].[sum:avg_delay:qk]' palette='orange_blue_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.184qtc903o8rhg11tv92d0crwte5].[sum:avg_delay:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='134' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.184qtc903o8rhg11tv92d0crwte5].[none:origin:nk] * [federated.184qtc903o8rhg11tv92d0crwte5].[sum:avg_delay:qk])</rows>
+        <cols>[federated.184qtc903o8rhg11tv92d0crwte5].[none:month:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.184qtc903o8rhg11tv92d0crwte5].[none:origin:nk]' type='filter' />
+            <card param='[federated.184qtc903o8rhg11tv92d0crwte5].[sum:avg_delay:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.184qtc903o8rhg11tv92d0crwte5].[none:month:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.184qtc903o8rhg11tv92d0crwte5].[none:month:qk]</field>
+            <field>[federated.184qtc903o8rhg11tv92d0crwte5].[none:year:qk]</field>
+            <field>[federated.184qtc903o8rhg11tv92d0crwte5].[sum:avg_delay:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      F0hT0/x/vokwIBHVvPQAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
